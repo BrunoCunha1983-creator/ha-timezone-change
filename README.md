@@ -22,9 +22,15 @@ When the tracker crosses a timezone boundary, the integration updates the timezo
 
 Copy `custom_components/timezone_change` to `/config/custom_components/`, restart Home Assistant, then add **Timezone & Clock Change** from Settings → Devices & services.
 
-## Monorepo
+## Instalação com HACS
 
-This copy lives inside the `ha_apps` monorepo under `integrations/timezone_change`. For HACS distribution it can be published/synchronised to a standalone repository automatically.
+1. Abre **HACS → Integrações**.
+2. Em **Repositórios personalizados**, adiciona `BrunoCunha1983-creator/ha-timezone-change` como **Integration**.
+3. Instala **Timezone & Clock Change**.
+4. Reinicia o Home Assistant.
+5. Vai a **Definições → Dispositivos e Serviços → Adicionar integração** e procura **Timezone & Clock Change**.
+
+O desenvolvimento principal desta integração é mantido no monorepo `BrunoCunha1983-creator/ha_apps`.
 
 ## Notes
 
